@@ -39,7 +39,7 @@ def move_zeroes_brute3(nums):
     n = len(nums)
 
     result = [0] * n
-      # pointer for filling non zeros
+    i = 0 # pointer for filling non zeros
     for num in nums:
         if num != 0:
             result[i] = num

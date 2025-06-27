@@ -21,3 +21,14 @@ def is_pal_tp(nums):
         left += 1
         right -= 1
     return True
+
+# symmetric version
+
+def is_pal_sym(arr):
+    n = len(arr)
+    for i in range(n//2):
+        if arr[i] != arr[n-1-i]:
+            return False
+    return True
+print(is_pal_sym([1,2,3,3,2,1]))
+
